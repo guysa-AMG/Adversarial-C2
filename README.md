@@ -2,8 +2,8 @@
 An adversarial emulation module designed to simulate advanced persistent threats (APTs). Developed in C#, this tool focuses on self-healing connectivity to help security operations centers (SOCs) validate their alerting pipelines against non-standard persistence vectors.
 
 A Proof-of-Concept (PoC) research project exploring resilient persistence mechanisms within the Windows environment using C# and .NET.
-[!WARNING]
-<h2>Disclaimer</h2>
+>[!WARNING]
+><h2>Disclaimer</h2>
 
 FOR EDUCATIONAL AND AUTHORIZED SECURITY TESTING PURPOSES ONLY. The use of this software for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. The author assumes no liability and is not responsible for any misuse or damage caused by this program.
  Project Overview
