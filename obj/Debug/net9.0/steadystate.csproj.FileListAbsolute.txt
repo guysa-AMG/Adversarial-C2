@@ -1,0 +1,14 @@
+/home/pirate/Documents/codes/dotnet/steadystate/bin/Debug/net9.0/steadystate
+/home/pirate/Documents/codes/dotnet/steadystate/bin/Debug/net9.0/steadystate.deps.json
+/home/pirate/Documents/codes/dotnet/steadystate/bin/Debug/net9.0/steadystate.runtimeconfig.json
+/home/pirate/Documents/codes/dotnet/steadystate/bin/Debug/net9.0/steadystate.dll
+/home/pirate/Documents/codes/dotnet/steadystate/bin/Debug/net9.0/steadystate.pdb
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.GeneratedMSBuildEditorConfig.editorconfig
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.AssemblyInfoInputs.cache
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.AssemblyInfo.cs
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.csproj.CoreCompileInputs.cache
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.dll
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/refint/steadystate.dll
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.pdb
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.genruntimeconfig.cache
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/ref/steadystate.dll
