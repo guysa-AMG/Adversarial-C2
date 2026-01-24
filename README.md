@@ -5,10 +5,10 @@ A Proof-of-Concept (PoC) research project exploring resilient persistence mechan
 >[!WARNING]
 ><h2>Disclaimer</h2>
 
-FOR EDUCATIONAL AND AUTHORIZED SECURITY TESTING PURPOSES ONLY. The use of this software for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. The author assumes no liability and is not responsible for any misuse or damage caused by this program.
+>FOR EDUCATIONAL AND AUTHORIZED SECURITY TESTING PURPOSES ONLY. The use of this software for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. The author assumes no liability and is not responsible for any misuse or damage caused by this program.
  Project Overview
 
-This repository contains a technical implementation of a "self-healing" agent. The primary goal of this research is to understand how modern malware maintains persistence despite manual intervention and to provide defenders with a baseline for developing behavioral detection rules.
+>This repository contains a technical implementation of a "self-healing" agent. The primary goal of this research is to understand how modern malware maintains persistence despite manual intervention and to provide defenders with a baseline for developing behavioral detection rules.
 Core Features
 
    - Resilient Execution: Implements a watchdog logic to ensure process continuity.
