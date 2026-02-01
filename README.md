@@ -11,11 +11,11 @@ A Proof-of-Concept (PoC) research project exploring resilient persistence mechan
 >This repository contains a technical implementation of a "self-healing" agent. The primary goal of this research is to understand how modern malware maintains persistence despite manual intervention and to provide defenders with a baseline for developing behavioral detection rules.
 Core Features
 
-   - Resilient Execution: Implements a watchdog logic to ensure process continuity.
+ >  - Resilient Execution: Implements a watchdog logic to ensure process continuity.
 
-   - Managed Persistence: Utilizes [e.g., Registry Run Keys / Scheduled Tasks] for re-entry.
+ >  - Managed Persistence: Utilizes [e.g., Registry Run Keys / Scheduled Tasks] for re-entry.
 
-   - C# / .NET Integration: Leverages native Windows APIs via P/Invoke for low-level system interaction.
+>   - C# / .NET Integration: Leverages native Windows APIs via P/Invoke for low-level system interaction.
 
  Defensive Analysis & Detection
 
