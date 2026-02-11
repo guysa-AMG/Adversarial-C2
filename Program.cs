@@ -8,8 +8,11 @@ class SteadyState
 {
     static int Main(string[] argv)
     {
-       
-        
+       Log log=new Log();
+       log.Info("HI");
+
+        SKCS sk = new SKCS();
+        sk.init(8888);
         return 0;
     }
 

@@ -12,3 +12,4 @@
 /home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.pdb
 /home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.genruntimeconfig.cache
 /home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/ref/steadystate.dll
+/home/pirate/Documents/codes/dotnet/steadystate/obj/Debug/net9.0/steadystate.sourcelink.json
