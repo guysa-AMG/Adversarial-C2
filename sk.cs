@@ -12,56 +12,45 @@ class SKCS
 #pragma warning disable CS8618 
     public SKCS(int port=1742)
   {    
-       this.init(port);
+       this.Init(port);
        this.accept_event = new SocketAsyncEventArgs();
        this.accept_event.Completed += OnAccept;
-
        this.log=new Log();
 
     }
      
 
-    public void init(int port)
+    public void Init(int port)
     {
        
          IPHostEntry hosts = Dns.GetHostEntry(Dns.GetHostName());
     try{
         IPAddress ip =IPAddress.Any;
-         IPEndPoint pEndPoint = new IPEndPoint(ip,port);
-    
+        IPEndPoint pEndPoint = new IPEndPoint(ip,port);
         this.stream=new Socket(pEndPoint.AddressFamily,SocketType.Stream,ProtocolType.Tcp);
-        try{
-        this.stream.Bind(pEndPoint);
-        }
+            try{
+            this.stream.Bind(pEndPoint);
+            }
             catch (Exception ex)
             {
                 this.log.Error(ex.Data.ToString());
             }
-            this.log.Success($"Successfully binded to {pEndPoint.Address}:{pEndPoint.Port}.");
+        this.log.Success($"Successfully binded to {pEndPoint.Address}:{pEndPoint.Port}.");
         }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine(ex.Data);
-        }
-        
+        catch (Exception ex) { Console.Error.WriteLine(ex.Data);}
     }
    
     public void Listen()
     {
-        
         this.stream.Listen(100);
-        this.Acceptance();
-        
+        this.Acceptance();   
     }
     private void Acceptance()
     {
         this.accept_event.AcceptSocket = null;
-      bool pending =  this.stream.AcceptAsync(this.accept_event);
-       
-       if (!pending)
-        {
-            OnAccept(this.stream,this.accept_event);
-        }   
+
+        bool pending =  this.stream.AcceptAsync(this.accept_event);
+       if (!pending){   OnAccept(this.stream,this.accept_event);    }   
     }
 
     private void OnAccept(object? sender, SocketAsyncEventArgs e)
@@ -85,15 +74,8 @@ class SKCS
     }
     protected void ArmEvent(SocketAsyncEventArgs read_event){
         Socket client = (Socket) read_event.UserToken!;
-        
         bool pending = client.ReceiveAsync(read_event);
-        if (!pending)
-        {
-            OnReadReciev(client,read_event);
-        }
-
-
-
+        if (!pending){  OnReadReciev(client,read_event);    }
     }
     public void OnReadReciev(Object? sender,SocketAsyncEventArgs e)
     {
@@ -115,29 +97,18 @@ class SKCS
     public void Request(Socket client,byte[] byt)
     {
         SocketAsyncEventArgs send_event = new SocketAsyncEventArgs();
-
         send_event.UserToken=client;
         send_event.SetBuffer(byt,0,byt.Length);
         send_event.Completed+=OnSendData;
-
         bool pending = client.SendAsync(send_event);
-
-        if (!pending)
-        {
-            OnSendData(client,send_event);
-        }
+        if (!pending){  OnSendData(client,send_event);  }
 
         
     }
     public void OnSendData(Object? sender,SocketAsyncEventArgs e)
     {
         Socket client =(Socket) e.UserToken!;
-        if (e.SocketError != SocketError.Success)
-        {
-            client.Close();
-        }
-        
-        
+            if (e.SocketError != SocketError.Success){  client.Close();   }
         e.Dispose();
         
     }

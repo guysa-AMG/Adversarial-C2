@@ -12,7 +12,7 @@ class SteadyState
        log.Info("HI");
 
         SKCS sk = new SKCS();
-        sk.init(8888);
+        sk.Init(8888);
         return 0;
     }
 
