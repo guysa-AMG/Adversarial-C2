@@ -33,22 +33,23 @@ class SKCS
             }
             catch (Exception ex)
             {
-                this.log.Error(ex.Data.ToString());
+                this.log.Error(ex.Data.ToString()!);
             }
         this.log.Success($"Successfully binded to {pEndPoint.Address}:{pEndPoint.Port}.");
         }
         catch (Exception ex) { Console.Error.WriteLine(ex.Data);}
     }
    
-    public void Listen()
+    public  void Listen()
     {
-        this.stream.Listen(100);
-        this.Acceptance();   
+         this.stream.Listen(100);
+            this.Acceptance(); 
     }
+
     private void Acceptance()
     {
+        log.Info("new incoming connection");
         this.accept_event.AcceptSocket = null;
-
         bool pending =  this.stream.AcceptAsync(this.accept_event);
        if (!pending){   OnAccept(this.stream,this.accept_event);    }   
     }
@@ -89,7 +90,9 @@ class SKCS
         }
 
         String? data = Console.ReadLine();
+        client.
         byte[] buffer = System.Text.Encoding.UTF8.GetBytes(data??"Hello World\n");
+        
         Request(client,buffer);
         ArmEvent(e);
 

@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ihw6NIysXMQ=",
+  "dgSpecHash": "AFdGQvdJmcQ=",
   "success": true,
   "projectFilePath": "/home/wtc/Documents/misc/Adversarial-C2/steadystate.csproj",
-  "expectedPackageFiles": [
-    "/home/wtc/.nuget/packages/microsoft.netcore.app.ref/9.0.14/microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
-    "/home/wtc/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.14/microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512",
-    "/home/wtc/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.14/microsoft.netcore.app.host.linux-x64.9.0.14.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
